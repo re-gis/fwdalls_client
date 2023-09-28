@@ -13,7 +13,13 @@ const NavBar = () => {
       </div>
 
       <div className="flex flex-row w-[80%] justify-end">
-        <nav className="w-[100%] flex justify-end">
+        <nav className="w-[100%] flex items-center justify-end">
+          <div
+            className="sm:hidden px-5 text-[30px] cursor-pointer hover:text-[#A842FF]"
+            id="burgerIcon"
+          >
+            ☰
+          </div>
           <ul className="flex items-center gap-8">
             <div className="hidden sm:flex gap-2 md:gap-8 items-center">
               <li className="gradient-underline">

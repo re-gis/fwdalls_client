@@ -23,7 +23,7 @@ const FutureProgramCard = ({
       </div>
       <div className="flex w-[100%] h-[100%] items-center justify-center gap-5 p-5 border-b border-[#A842FF]">
         <img
-          className="rounded-full w-[20%] md:w-[40%] h-[50px] sm:h-[100px] object-fill md:object-cover"
+          className="rounded-full w-[20%] md:w-[30%] h-[50px] sm:h-[100px] object-fill md:object-cover"
           src={pic}
           alt=""
         />

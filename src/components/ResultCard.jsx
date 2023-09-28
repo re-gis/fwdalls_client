@@ -12,6 +12,7 @@ const ResultCard = ({ image, title, desc }) => {
             <p className="text-[15px]">{desc}</p>
           </div>
         </div>
+        
       </div>
     </>
   );

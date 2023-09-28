@@ -42,55 +42,51 @@ const LandingPage = () => {
                 <span>technologies to thrive in the digital age</span>
               </h3>
 
-              <div className="text-[15px] flex flex-row btn-container items-center gap-5">
-                <button className="bg border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+              <div className="text-[15px] flex flex-col sm:flex-row btn-container items-center gap-5">
+                <button className="bg w-[60%] sm:w-[40%] border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
                   Schedule a Call
                 </button>
-                <button className="gradient-underline-inverse py-2 px-5 rounded-[20px]">
+                <button className="gradient-underline-inverse w-[60%] sm:w-[40%] py-2 px-5 rounded-[20px]">
                   Book a Free Class
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="hidden lg:flex flex-col w-[40%] flex-wrap gap-10">
-            <div className="flex w-[100%] justify-end gap-5">
-              <div className="w-[18%] h-[150px] border rounded-[40px]">
-                <img
-                  src={p1}
-                  className="h-[100%] w-[100%] rounded-[40px] object-cover"
-                  alt=""
-                />
-              </div>
-              <div className="w-[15%] h-[90px] border rounded-tl-full rounded-bl-full rounded-br-full">
-                <img
-                  className="h-[100%] w-[100%] rounded-tl-full rounded-bl-full rounded-br-full object-cover"
-                  src={p2}
-                  alt=""
-                />
-              </div>
+          <div className="hidden lg:flex w-[40%] flex-wrap gap-10">
+            <div className="w-[30%] h-[250px] border rounded-[40px]">
+              <img
+                src={p1}
+                className="h-[100%] w-[100%] rounded-[40px] object-cover"
+                alt=""
+              />
             </div>
-            <div className="flex w-[100%] justify-end gap-5">
-              <div className="w-[15%] h-[90px] border rounded-tr-full rounded-br-full rounded-tl-full">
-                <img
-                  className="h-[100%] w-[100%] rounded-tr-full rounded-br-full rounded-tl-full object-cover"
-                  src={p3}
-                  alt=""
-                />
-              </div>
-              <div className="w-[18%] h-[150px] border rounded-[40px]">
-                <img
-                  className="h-[100%] w-[100%] rounded-[40px] object-cover"
-                  src={p4}
-                  alt=""
-                />
-              </div>
+            <div className="w-[25%] h-[120px] border rounded-tl-full rounded-bl-full rounded-br-full">
+              <img
+                className="h-[100%] w-[100%] rounded-tl-full rounded-bl-full rounded-br-full object-cover"
+                src={p2}
+                alt=""
+              />
+            </div>
+            <div className="w-[25%] h-[120px] border rounded-tr-full rounded-br-full rounded-tl-full">
+              <img
+                className="h-[100%] w-[100%] rounded-tr-full rounded-br-full rounded-tl-full object-cover"
+                src={p3}
+                alt=""
+              />
+            </div>
+            <div className="w-[30%] h-[250px] border rounded-[40px]">
+              <img
+                className="h-[100%] w-[100%] rounded-[40px] object-cover"
+                src={p4}
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-white ">
+      <div className="bg-white flex items-center justify-center">
         <ShapingTomorrow />
       </div>
 
@@ -127,6 +123,11 @@ const LandingPage = () => {
               "Expert tutors, giving engaging live online sessions with an interactive hands-on learning experience"
             }
           />
+        </div>
+        <div className="flex items-start justify-center py-10">
+          <button className="text-white border border-[#242A3A]  bg py-2 px-5 rounded-[100px] sm:w-[25%] md:w-[20%] hoverBtn">
+            Schedule a Call
+          </button>
         </div>
       </div>
 
