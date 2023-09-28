@@ -18,14 +18,14 @@ const ShapingTomorrow = () => {
         </h3>
       </div>
       <div className="h-[100%] flex flex-wrap justify-center items-center gap-10">
-        <img className="w-[20%] h-[250px] object-cover" src={p1} alt="" />
-        <img className="w-[20%] h-[250px] object-cover" src={p2} alt="" />
-        <img className="w-[20%] h-[250px] object-cover" src={p3} alt="" />
-        <img className="w-[20%] h-[250px] object-cover" src={p4} alt="" />
+        <img className="w-[100%] sm:w-[20%] px-5 sm:px-0 h-[250px] object-contain sm:object-cover" src={p1} alt="" />
+        <img className="w-[100%] sm:w-[20%] px-5 sm:px-0 h-[250px] object-contain sm:object-cover" src={p2} alt="" />
+        <img className="w-[100%] sm:w-[20%] px-5 sm:px-0 h-[250px] object-contain sm:object-cover" src={p3} alt="" />
+        <img className="w-[100%] sm:w-[20%] px-5 sm:px-0 h-[250px] object-contain sm:object-cover" src={p4} alt="" />
       </div>
 
       <div className="flex items-start justify-center">
-        <button className="text-white underline bg border border-none bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+        <button className="text-white border border-white bg py-2 px-5 rounded-[100px] sm:w-[25%] md:w-[20%] hoverBtn">
           Schedule a Call
         </button>
       </div>

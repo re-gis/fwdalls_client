@@ -8,42 +8,17 @@
 }
 
 
-.button {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid transparent;
-  background-image: linear-gradient(95deg, #7583ff, #780EFF, #E43DFF, #DB00FF), none;
-}
-
-.button::before {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  z-index: -1;
-  background: linear-gradient(95deg, #7583ff, #780EFF, #E43DFF, #DB00FF);
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-
 
 .button:hover {
-  background: #0f0d0d;
-  background-image: linear-gradient(95deg, #7583ff, #780EFF, #E43DFF, #DB00FF);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  display: inline-block;
+  background: #181c27;
   border: 1px solid #A842FF;
 }
 
 
 .hoverBtn:hover {
-  background-color: #181c27;
+  background: #fff;
+  color: #A842FF;
+  border: 1px solid #A842FF;
 }
 
 
@@ -62,7 +37,6 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
-  padding: 10px 20px;
   background: #242A3A;
   border: 1px solid #A842FF;
   background: linear-gradient(95deg, #7583ff, #780EFF, #E43DFF, #DB00FF);
@@ -87,6 +61,11 @@
   width: 100%;
   opacity: 0;
   background: linear-gradient(95deg, #7583ff, #780EFF, #E43DFF, #DB00FF);
+}
+
+
+@media screen {
+  
 }
 
 

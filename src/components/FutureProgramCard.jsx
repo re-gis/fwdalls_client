@@ -1,61 +1,101 @@
 /* eslint-disable */
 import React from "react";
-import girl from "../assets/images/girl.jpg";
 
-const FutureProgramCard = () => {
+const FutureProgramCard = ({
+  title,
+  role,
+  weeks,
+  levels,
+  topics,
+  skills,
+  mainTopic,
+  mainSkill,
+  certs,
+  pic,
+  money,
+}) => {
   return (
-    <div className="bg-[#181c27] text-white w-[20%] border-[#A842FF] border-[2px]">
+    <div className="bg-[#181c27] text-white w-[80%] md:w-[30%] border-[#A842FF] h-[100%] border-[2px]">
       <div className="border-b border-[#A842FF] p-3 font-[400]">
-        <h2 className="flex justify-center text-[20px] items-center">Basic</h2>
+        <h2 className="flex justify-center text-[20px] items-center">
+          {title}
+        </h2>
       </div>
       <div className="flex w-[100%] h-[100%] items-center justify-center gap-5 p-5 border-b border-[#A842FF]">
         <img
-          className="rounded-full w-[20%] h-[45px] object-cover"
-          src={girl}
+          className="rounded-full w-[20%] md:w-[40%] h-[50px] sm:h-[100px] object-fill md:object-cover"
+          src={pic}
           alt=""
         />
-        <h1 className="text-[20px]">Explorer</h1>
+        <h1 className="text-[20px]">{role}</h1>
       </div>
       <div className="border-b border-[#A842FF] flex flex-col gap-3 p-3">
         <div className="flex items-center justify-around">
           <p className="text-[15px] text-[#A842FF]">
-            17 <span className="text-[12px] text-gray-400">weeks</span>
+            {weeks} <span className="text-[11px] text-gray-400">weeks</span>
           </p>
-          <p className="text-[12px] text-gray-400">
-            levels <span className="text-[15px] text-[#A842FF]">1 & 2</span>
+          <p className="text-[11px] text-gray-400">
+            levels <span className="text-[15px] text-[#A842FF]">{levels}</span>
           </p>
         </div>
 
         <div className="flex items-center justify-around">
           <p className="text-[15px] gradient-font">
-            10 <span className="text-[12px] text-gray-400">topics</span>
+            {topics} <span className="text-[11px] text-gray-400">topics</span>
           </p>
           <p className="text-[15px] gradient-font">
-            3 <span className="text-[12px] text-gray-400">skills</span>
+            {skills} <span className="text-[11px] text-gray-400">skills</span>
           </p>
         </div>
       </div>
       <div className="text-gray-400 p-4">
         <h1 className="gradient-font text-[15px] font-bold">Topics</h1>
-        <div className="text-[12px]">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-            eveniet odio iste nostrum quibusdam similique pariatur tempore,
-            veritatis ipsa doloremque veniam ab eaque distinctio, repudiandae
-            quos exercitationem incidunt nulla dolorem?
-          </p>
+        {role === "Explorer" && (
+          <>
+            <p className="text-[12px] text-[#181c27] font-bold">Nothing</p>
+          </>
+        )}
+        {role === "Innovator" && (
+          <>
+            <p className="text-[12px] font-bold">Explorer +</p>
+          </>
+        )}
+
+        {role === "Visionary" && (
+          <>
+            <p className="text-[12px] font-bold">Innovator +</p>
+          </>
+        )}
+        <div className="text-[11px]">
+          <p>{mainTopic}</p>
         </div>
       </div>
 
       <div className="text-gray-400 p-4">
         <h1 className="gradient-font text-[15px] font-bold">Skills</h1>
-        <div className="text-[12px]">
-          <p>Personal Development, Tech, Sciences</p>
+        {role === "Explorer" && (
+          <>
+            <p className="text-[12px] text-[#181c27] font-bold">Nothing</p>
+          </>
+        )}
+        {role === "Innovator" && (
+          <>
+            <p className="text-[12px] font-bold">Explorer +</p>
+          </>
+        )}
+
+        {role === "Visionary" && (
+          <>
+            <p className="text-[12px] font-bold">Innovator +</p>
+          </>
+        )}
+        <div className="text-[11px]">
+          <p>{mainSkill}</p>
         </div>
       </div>
 
       <div className="p-4">
-        <button className="border border-none bg py-2 px-5 rounded-md flex items-center justify-center text-[12px] font-bold">
+        <button className="border w-[100%] bg py-2 px-5 button rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -71,40 +111,48 @@ const FutureProgramCard = () => {
             />
           </svg>
 
-          <p>Explorer Certificate</p>
+          <p>{certs}</p>
         </button>
       </div>
 
-      <div>
-        <ul>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Certification
+      <div className="px-4">
+        <ul className="flex flex-col text-[11px] text-gray-400">
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Certification</span>
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Person letter
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Person letter</span>
             of recommendation
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Career &
-            industry talks
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Career & industry talks</span>
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Lifetime
-            alumni access
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Lifetime alumni access</span>
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Peer-to-peer
-            mentorship
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Peer-to-peer mentorship</span>
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Industry
-            executive mentorship
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Industry executive mentorship</span>
           </li>
-          <li>
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>Work
-            experience / internship
+          <li className="flex gap-2 text-[11px]">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span>Work experience / internship</span>
           </li>
         </ul>
+      </div>
+
+      <div className="p-4">
+        <button className="border w-[100%] gradient-underline-inverse py-3 px-5 rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
+          £{money}
+        </button>
       </div>
     </div>
   );

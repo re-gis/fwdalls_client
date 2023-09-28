@@ -12,19 +12,20 @@ import s4 from "../assets/images/s4.svg";
 import ShapingTomorrow from "../components/ShapingTomorrow";
 import ResultCard from "../components/ResultCard";
 import FutureProgramCard from "../components/FutureProgramCard";
+import girl from "../assets/images/girl.jpg";
 
 const LandingPage = () => {
   return (
-    <div className="w-full flex flex-col gap-10 landing py-3">
+    <div className="flex flex-col gap-10 landing py-3 w-[100%]">
       <div className="w-[100%] px-[4%] h-[100%] text-white text-[12px] font-[500]">
         <div className=" w-[100%] h-[15%]">
           <NavBar />
         </div>
 
         <div className="flex items-center w-[100%] px-[4%] justify-between">
-          <div className="flex flex-col text-[100px] w-[50%]">
+          <div className="flex flex-col text-[50px] sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
             <h1 className="gradient-font">Futurescool</h1>
-            <h2 className="text-[40px] flex flex-col">
+            <h2 className="text-[40px] justify-center flex flex-col">
               <span>Forging Stronger Futures.</span>
               <span>One Skill at a Time</span>
             </h2>
@@ -41,8 +42,8 @@ const LandingPage = () => {
                 <span>technologies to thrive in the digital age</span>
               </h3>
 
-              <div className="text-[15px] flex items-center gap-5">
-                <button className="gradient-underline bg border border-none bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+              <div className="text-[15px] flex flex-row btn-container items-center gap-5">
+                <button className="bg border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
                   Schedule a Call
                 </button>
                 <button className="gradient-underline-inverse py-2 px-5 rounded-[20px]">
@@ -52,7 +53,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col w-[50%] flex-wrap gap-10">
+          <div className="hidden lg:flex flex-col w-[40%] flex-wrap gap-10">
             <div className="flex w-[100%] justify-end gap-5">
               <div className="w-[18%] h-[150px] border rounded-[40px]">
                 <img
@@ -93,13 +94,13 @@ const LandingPage = () => {
         <ShapingTomorrow />
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-[100%]">
         <div className="flex items-center justify-center">
-          <h1 className="text-[30px] font-bold text-white">
+          <h1 className="text-[30px] flex items-center justify-center font-bold text-white">
             Programs Designed to Deliver Results
           </h1>
         </div>
-        <div className="w-[100%] gap-5 flex justify-center items-center pt-10">
+        <div className="w-[100%] gap-5 px-10 flex flex-col sm:flex-row sm:justify-center items-center pt-10">
           <ResultCard
             image={s1}
             title={"Live Tutoring"}
@@ -129,12 +130,63 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col py-[5%] bg-white">
+      <div className="flex flex-col py-[5%] bg-white gap-10">
         <div className="flex justify-center items-center">
-          <h1 className="text-[30px] font-bold gradient-font">Futurescool Program</h1>
+          <h1 className="text-[30px] font-bold gradient-font">
+            Futurescool Program
+          </h1>
         </div>
-        <div>
-          <FutureProgramCard />
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+            <FutureProgramCard
+              title={"Basic"}
+              role={"Explorer"}
+              weeks={"17"}
+              levels={"1 & 2"}
+              topics={"10"}
+              skills={"3"}
+              mainTopic={
+                "Financial Literacy, Communication Skills, Ai, Robotics, Collaboration & Teamwork, Software Engineering, Art of Interviewing, Critical Thinking & Problem Solving, Cyber Security & Online Safety"
+              }
+              mainSkill={"Personal Development, Tech, Sciences"}
+              certs={"Explorer Certificate"}
+              pic={girl}
+              money={"825"}
+            />
+            <FutureProgramCard
+              title={"Most Popular"}
+              role={"Innovator"}
+              weeks={"34"}
+              levels={"1 - 4"}
+              topics={"20"}
+              skills={"6"}
+              mainTopic={
+                "Creativity & Innovation, Building Adaptability & Resilience, Self Worth & Confidence, Social Media & Mental Health, Entrepreneurship, ChatGPT, Blockchain Renewable Energy, Web 3, Smart Cities"
+              }
+              mainSkill={"Life Skills, Cognitive Skills, Digital Literacy"}
+              certs={"Innovator Certificate"}
+              pic={girl}
+              money={"1950"}
+            />
+            <FutureProgramCard
+              title={"Best Value"}
+              role={"Visionary"}
+              weeks={"54"}
+              levels={"1 - 6"}
+              topics={"30"}
+              skills={"9"}
+              mainTopic={
+                "IQ & EQ, Leadership & Management, Diversity & Equality, Time Management, Conflict Management & Resolution, Crypto Currency, iOT, Quantum Computing, Biotechnology, Nanotechnology"
+              }
+              mainSkill={"Future Tech, Soft Skills, Financial Literacy"}
+              certs={"Visionary Certificate"}
+              pic={girl}
+              money={"3100"}
+            />
+          </div>
+          <div className="flex justify-center items-center text-[12px] text-gray-600">
+            <p>*payment plans available, please ask for details</p>
+          </div>
         </div>
       </div>
     </div>
