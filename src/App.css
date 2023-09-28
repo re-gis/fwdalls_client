@@ -42,6 +42,11 @@
 }
 
 
+.hoverBtn:hover {
+  background-color: #181c27;
+}
+
+
 .button:hover::before {
   opacity: 1;
 }

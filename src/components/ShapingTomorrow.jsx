@@ -10,7 +10,7 @@ const ShapingTomorrow = () => {
   return (
     <div className="flex flex-col gap-10 py-[5%]">
       <div className="flex flex-col items-center w-[100%]">
-        <h1 className="text-[25px] font-bold gradient-font">
+        <h1 className="text-[30px] font-bold gradient-font">
           Shapping Tomorrow
         </h1>
         <h3 className="font-[500]">
