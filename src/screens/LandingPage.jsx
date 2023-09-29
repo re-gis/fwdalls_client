@@ -13,16 +13,18 @@ import ShapingTomorrow from "../components/ShapingTomorrow";
 import ResultCard from "../components/ResultCard";
 import FutureProgramCard from "../components/FutureProgramCard";
 import girl from "../assets/images/girl.jpg";
+import ChildWillLearn from "../components/ChildWillLearn";
+import RoadMap from "../components/RoadMap";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap-10 landing py-3 w-[100%]">
+    <div className="flex flex-col gap landing py-3 w-[100%]">
       <div className="w-[100%] px-[4%] h-[100%] text-white text-[12px] font-[500]">
         <div className=" w-[100%] h-[15%]">
           <NavBar />
         </div>
 
-        <div className="flex items-center w-[100%] px-[4%] justify-between">
+        <div className="flex items-center w-[100%] px-[4%] py-[5%] justify-between">
           <div className="flex flex-col text-[50px] sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
             <h1 className="gradient-font">Futurescool</h1>
             <h2 className="text-[40px] justify-center flex flex-col">
@@ -86,11 +88,11 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="bg-white flex items-center justify-center">
+      <div className="bg-white flex items-center py-[5%] justify-center">
         <ShapingTomorrow />
       </div>
 
-      <div className="flex flex-col w-[100%]">
+      <div className="flex flex-col w-[100%] py-[5%]">
         <div className="flex items-center justify-center">
           <h1 className="text-[30px] flex items-center justify-center font-bold text-white">
             Programs Designed to Deliver Results
@@ -189,6 +191,14 @@ const LandingPage = () => {
             <p>*payment plans available, please ask for details</p>
           </div>
         </div>
+      </div>
+
+      <div className="py-[5%]">
+        <RoadMap />
+      </div>
+
+      <div className="w-[100%] bg-white">
+        <ChildWillLearn />
       </div>
     </div>
   );

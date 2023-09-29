@@ -4,7 +4,7 @@ import classPic from "../assets/images/class.jpg";
 
 const ShapingTomorrow = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-10 p-[5%] justify-between w-[80%]">
+    <div className="flex flex-col lg:flex-row items-center gap-10 px-[5%] justify-between w-[80%]">
       <div className="flex flex-col w-[100%] h-[100%] gap-5 lg:w-[50%]">
         <h1 className="text-[25px] font-bold gradient-font">
           Shapping Tomorrow: The Futurescool approach to innovate learning

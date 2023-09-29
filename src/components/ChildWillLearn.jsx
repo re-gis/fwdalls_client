@@ -1,0 +1,49 @@
+/* eslint-disable */
+import React from "react";
+import classPic from "../assets/images/class.jpg";
+import LearnCard from "./LearnCard";
+import s1 from '../assets/images/s1.svg'
+import s2 from '../assets/images/s2.svg'
+import s3 from '../assets/images/s3.svg'
+import s4 from '../assets/images/s4.svg'
+
+const ChildWillLearn = () => {
+  return (
+    <div className="relative h-auto md:h-[900px]  bg-white-400 flex flex-col items-center">
+      <div className="w-[100%] hidden md:block absolute bg-blue-400 h-[40%]">
+        <img
+          src={classPic}
+          className="h-[100%] w-[100%] object-cover "
+          alt=""
+        />
+      </div>
+      <div className="md:absolute my-5 md:py-0 bg-blue-50 w-[80%] flex flex-col top-[30%] justify-center p-10">
+        <div className="flex flex-col text-center items-center gap-5">
+          <h1 className="flex justify-center text-center gradient-font text-[30px] font-bold">Your Child Will Learn</h1>
+          <h1 className="flex justify-center text-[17px] text-center">
+            Cultivating these skills is a vital mission at Futurescool.
+            Together, these skills form a robust foundation for your child's
+            personal and education success. They empower children to adapt to
+            changing circumstances, thrive in diverse environments and make
+            positive contributions to society.
+          </h1>
+        </div>
+
+        <div className="py-5 flex flex-col md:flex-row flex-wrap overflow-x-auto items-center justify-center gap-3">
+            <LearnCard icon={s1} title={'Critical thinking'} />
+            <LearnCard icon={s2} title={'Structure'} />
+            <LearnCard icon={s3} title={'Confidence'} />
+            <LearnCard icon={s4} title={'Communication skills'} />
+            <LearnCard icon={s1} title={'Grit'} />
+            <LearnCard icon={s2} title={'Logic'} />
+            <LearnCard icon={s3} title={'Creative thinking'} />
+            <LearnCard icon={s4} title={'Problem solving'} />
+            <LearnCard icon={s1} title={'Resiliency'} />
+            <LearnCard icon={s2} title={'Empathy'} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ChildWillLearn;

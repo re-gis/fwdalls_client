@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import MultiDigitCounter from "../NumberCounter";
 
 const FutureProgramCard = ({
   title,
@@ -31,8 +32,9 @@ const FutureProgramCard = ({
       </div>
       <div className="border-b border-[#A842FF] flex flex-col gap-3 p-3">
         <div className="flex items-center justify-around">
-          <p className="text-[15px] text-[#A842FF]">
-            {weeks} <span className="text-[11px] text-gray-400">weeks</span>
+          <p className="text-[15px] flex items-center text-[#A842FF]">
+            <MultiDigitCounter target={weeks} duration={1000} />{" "}
+            <span className="text-[11px] text-gray-400">weeks</span>
           </p>
           <p className="text-[11px] text-gray-400">
             levels <span className="text-[15px] text-[#A842FF]">{levels}</span>
@@ -40,11 +42,12 @@ const FutureProgramCard = ({
         </div>
 
         <div className="flex items-center justify-around">
-          <p className="text-[15px] gradient-font">
-            {topics} <span className="text-[11px] text-gray-400">topics</span>
+          <p className="text-[15px] flex items-center gradient-font">
+            <MultiDigitCounter target={topics} duration={1000} />{" "}
+            <span className="text-[11px] text-gray-400">topics</span>
           </p>
-          <p className="text-[15px] gradient-font">
-            {skills} <span className="text-[11px] text-gray-400">skills</span>
+          <p className="text-[15px] gradient-font flex items-center">
+            <MultiDigitCounter target={skills} duration={1000} /> <span className="text-[11px] text-gray-400">skills</span>
           </p>
         </div>
       </div>
@@ -151,7 +154,7 @@ const FutureProgramCard = ({
 
       <div className="p-4">
         <button className="border w-[100%] gradient-underline-inverse py-3 px-5 rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
-          £{money}
+          £<MultiDigitCounter target={money} duration={1000} />
         </button>
       </div>
     </div>
