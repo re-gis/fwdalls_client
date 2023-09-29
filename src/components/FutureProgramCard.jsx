@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import MultiDigitCounter from "../NumberCounter";
+import MultiDigitCounter from "../utils/NumberCounter";
 
 const FutureProgramCard = ({
   title,
