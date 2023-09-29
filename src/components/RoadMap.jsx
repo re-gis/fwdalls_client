@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from "react";
-import rdmap from "../assets/images/rdmap.svg";
+import rdmap from "../assets/images/mapsvg.svg";
+import line from "../assets/images/OBJECTS.svg";
 
 const RoadMap = () => {
   return (
@@ -10,8 +11,9 @@ const RoadMap = () => {
           Your Child's Learning Journey At Futurescool
         </h1>
       </div>
-      <div className="hidden lg:flex justify-center p-10">
-        <img src={rdmap} className="w-[60%]" alt="" />
+      <div className="hidden lg:flex relative justify-center p-10">
+        {/* <img src={rdmap} className="w-[60%]" alt="" /> */}
+        <img src={line} className="w-[60%] left-[310px] top-[70px] " />
       </div>
 
       <div className="flex sm:flex-row flex-col items-center gap-10 sm:gap-0 justify-around">
