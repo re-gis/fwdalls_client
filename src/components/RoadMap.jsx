@@ -35,7 +35,9 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="flex lg:hidden flex-col gap-5 py-5">
-        <h1 className="gradient-font text-[30px] flex items-center justify-center font-bold">Road Map</h1>
+        <h1 className="gradient-font text-[30px] flex items-center justify-center font-bold">
+          Road Map
+        </h1>
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-10">
             <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
@@ -102,8 +104,8 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="w-[100%] flex pt-10 justify-center">
-        <button className="bg lg:w-[20%] md:w-[40%] sm:w-[60%] w-[80%] text-white hover:no-underline underline hover:text-[#A842FF] border border-transparent bg py-2 px-5 rounded-[20px] button gradient-border-btn">
-          Schedule a Call
+        <button className="gradient-underline-inverse lg:w-[20%] md:w-[40%] sm:w-[60%] w-[80%] hover:text-white hover:no-underline underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+          Book a Free Class
         </button>
       </div>
     </div>

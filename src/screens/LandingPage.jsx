@@ -15,6 +15,8 @@ import FutureProgramCard from "../components/FutureProgramCard";
 import girl from "../assets/images/girl.jpg";
 import ChildWillLearn from "../components/ChildWillLearn";
 import RoadMap from "../components/RoadMap";
+import CircularLoader from "../utils/CircularLoader";
+import WhatIsSaid from "../components/WhatIsSaid";
 
 const LandingPage = () => {
   return (
@@ -200,8 +202,46 @@ const LandingPage = () => {
       <div className="w-[100%] bg-white">
         <ChildWillLearn />
       </div>
+
+      <div className="flex flex-col justify-center items-center gap-5 py-[5%]">
+        <h1 className="text-[30px] font-bold text-white flex justify-center">
+          Result We Deliver
+        </h1>
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-center items-center">
+          <CircularLoader
+            percentage={94}
+            text={"Students rate Futurescool experience as 'excellent'"}
+          />
+          <CircularLoader
+            percentage={93}
+            text={"Students would recommend Futurescool "}
+          />
+          <CircularLoader
+            percentage={89}
+            text={"Students said Futurscool is more fun & engaging than school"}
+          />
+          <CircularLoader
+            percentage={95}
+            text={"Parents say their child is more engaged at school "}
+          />
+          <CircularLoader
+            percentage={82}
+            text={"Parents say their child is more confident"}
+          />
+        </div>
+        <div className="flex w-[100%] justify-center">
+          <button className="gradient-underline-inverse w-[60%] sm:w-[25%] hover:text-white underline hover:no-underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+            Schedule a Call
+          </button>
+        </div>
+      </div>
+
+      <div className="bg-white w-[100%] py-[5%]">
+        <WhatIsSaid />
+      </div>
     </div>
   );
 };
 
 export default LandingPage;
+
