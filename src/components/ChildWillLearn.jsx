@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import classPic from "../assets/images/classPic.jpg";
+import classPic from "../assets/images/classPic.png";
 import LearnCard from "./LearnCard";
 import Problem from "../assets/images/Problem.svg";
 import Structure from "../assets/images/Structure.svg";
@@ -13,13 +13,14 @@ import Confidence from "../assets/images/Confidence.svg";
 import Grit from "../assets/images/Grit.svg";
 import Logics from "../assets/images/Logicsvg.svg";
 
+
 const ChildWillLearn = () => {
   return (
     <div className="relative h-auto md:h-[1500px]  bg-white-400 flex flex-col items-center">
-      <div className="w-[100%] hidden md:block absolute bg-blue-400 h-[40%]">
-        <img src={classPic} className="h-[713px] w-[1500px]" alt="" />
+      <div className="w-[100%] hidden md:block absolute  bg-cover h-[40%]">
+        <img src={classPic} className="h-[513px] w-[1500px]" alt="" />
       </div>
-      <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[30%] justify-center p-10">
+      <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[20%] justify-center p-10">
         <div className="flex flex-col text-center items-center gap-5">
           <h1 className="flex justify-center text-center gradient-font text-[54px] font-bold">
             Your Child Will Learn
