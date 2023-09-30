@@ -112,32 +112,37 @@ const FutureProgramCard = ({
       <div className="px-4">
         <ul className="flex flex-col text-[11px] text-gray-400">
           <li className="flex gap-2 text-[16px]">
-            <img src={check}  alt="" />
+            <img src={check} alt="" />
             <span>Certification</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={check}  alt="" />
-            <span>Person letter</span>
-            of recommendation
+            <img src={check} alt="" />
+            <span>Person letter of recommendation</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={check}  alt="" />
+            <img src={check} alt="" />
             <span>Career & industry talks</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={falsee}  alt="" />
+            <img src={role === "Explorer" ? falsee : check} alt="" />
             <span>Lifetime alumni access</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={falsee}  alt="" />
+            <img src={role === "Explorer" ? falsee : check} alt="" />
             <span>Peer-to-peer mentorship</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={falsee}  alt="" />
+            <img
+              src={role === "Explorer" || role === "Innovator" ? falsee : check}
+              alt=""
+            />
             <span>Industry executive mentorship</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={falsee}  alt="" />
+            <img
+              src={role === "Explorer" || role === "Innovator" ? falsee : check}
+              alt=""
+            />
             <span>Work experience / internship</span>
           </li>
         </ul>

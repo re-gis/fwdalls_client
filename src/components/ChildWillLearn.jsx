@@ -34,7 +34,7 @@ const ChildWillLearn = () => {
           </h1>
         </div>
 
-        <div className="py-5 flex flex-col md:flex-row flex-wrap overflow-x-auto items-center justify-center gap-3">
+        <div className="py-5 flex w-[100%] flex-col md:flex-row flex-wrap overflow-x-auto items-center justify-center gap-3">
           <LearnCard icon={Thinking} title={"Critical thinking"} />
           <LearnCard icon={Structure} title={"Structure"} />
           <LearnCard icon={Confidence} title={"Confidence"} />

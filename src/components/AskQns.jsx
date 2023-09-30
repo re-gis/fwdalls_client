@@ -5,12 +5,12 @@ import QnsCard from "./QnsCard";
 
 const AskQns = () => {
   return (
-    <div className="md:relative h-[1200px] flex flex-col items-center">
+    <div className="md:relative h-[auto] pb-[00px] sm:pb-[00px] md:pb-[350px] flex flex-col items-center">
       <div className="md:absolute">
         <img src={image} alt="" />
       </div>
 
-      <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[30%] justify-center p-10">
+      <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[350px] justify-center p-10">
         <div className="flex flex-col text-center items-center gap-5">
           <h1 className="flex justify-center text-center gradient-font text-[36px] font-bold">
             Frequently Asked Questions
@@ -42,7 +42,7 @@ const AskQns = () => {
           </nav>
         </div>
 
-        <div className="py-5 flex flex-col md:flex-row flex-wrap overflow-x-auto items-center justify-center gap-3">
+        <div className="py-5 w-[100%] flex flex-col md:flex-row flex-wrap overflow-x-auto items-center justify-center gap-3">
           <QnsCard text={"What is Futurescool?"} />
           <QnsCard text={"Who can enroll in Futurescool?"} />
           <QnsCard text={"Why focus on soft skills and future technologies?"} />

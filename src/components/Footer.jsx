@@ -14,8 +14,8 @@ import snapchat from "../assets/images/snapchat.svg";
 
 const Footer = () => {
   return (
-    <div className="text-[#919EAB] py-[5%] font-[400] text-[16px] mt-20 ">
-      <div className="flex flex-col md:flex-row justify-between px-20 pb-20 pt-10">
+    <div className="text-[#919EAB] font-[400] text-[16px] mt-20 ">
+      <div className="flex flex-col md:flex-row px-[5%] w-[100%] justify-around pb-20 pt-10">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-[20px] font-[600]">Explore</h1>
           <div className="text-[16px] font-[400]">

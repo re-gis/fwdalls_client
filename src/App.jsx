@@ -1,22 +1,19 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import LandingPage from './screens/LandingPage'
-import CircularLoader from './utils/CircularLoader';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./screens/LandingPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route
-            path="/test"
-            element={<CircularLoader percentage={45} />}
-          />
-        </Routes>
+        <div className="w-[100vw]">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   );
 }
 
-export default App
+export default App;

@@ -1,10 +1,6 @@
 /* eslint-disable */
 import React from "react";
 import NavBar from "../components/NavBar";
-import p1 from "../assets/images/p1.jpg";
-import p2 from "../assets/images/p2.jpg";
-import p3 from "../assets/images/p3.jpg";
-import p4 from "../assets/images/p4.jpg";
 import s1 from "../assets/images/s1.svg";
 import s2 from "../assets/images/s2.svg";
 import s3 from "../assets/images/s3.svg";
@@ -25,15 +21,15 @@ import nice from '../assets/images/nice.svg'
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap landing pt-3 w-[100%]">
+    <div className="flex w-[100%] flex-col gap landing pt-3">
       <div className="w-[100%] px-[4%] h-[100%] text-white text-[12px] font-[500]">
         <div className=" w-[100%] h-[15%]">
           <NavBar />
         </div>
 
-        <div className="flex items-center w-[100%] px-[4%] py-[5%] justify-between">
-          <div className="flex flex-col sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
-            <h1 className="gradient-font text-[90px] font-extrabold">
+        <div className="flex items-center w-[100%] py-[5%] justify-between">
+          <div className="flex flex-col md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
+            <h1 className="gradient-font flex flex-col text-[40px] md:text-[90px] font-extrabold">
               Futurescool
             </h1>
             <h2 className="text-[48px] justify-center flex flex-col">
@@ -54,10 +50,10 @@ const LandingPage = () => {
               </h3>
 
               <div className="text-[15px] flex flex-col sm:flex-row btn-container items-center gap-5">
-                <button className="bg lg:w-[170px] sm:w-[40%] border bg py-2 px-5 underline rounded-[20px] button gradient-border-btn">
+                <button className="bg lg:w-[170px] w-[60%] sm:w-[40%] border bg py-2 px-5 underline rounded-[20px] button gradient-border-btn">
                   Schedule a Call
                 </button>
-                <button className="gradient-underline-inverse lg:w-[170px] underline sm:w-[40%] py-2 px-5 rounded-[20px]">
+                <button className="gradient-underline-inverse w-[60%] lg:w-[170px] underline sm:w-[40%] py-2 px-5 rounded-[20px]">
                   Book a Free Class
                 </button>
               </div>
@@ -76,7 +72,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col w-[100%] py-[5%]">
         <div className="flex items-center justify-center">
-          <h1 className="text-[30px] flex items-center justify-center font-bold text-white">
+          <h1 className="text-[30px] text-center md:text-left flex items-center justify-center font-bold text-white">
             Programs Designed to Deliver Results
           </h1>
         </div>
@@ -117,7 +113,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col py-[5%] bg-white gap-10">
         <div className="flex justify-center items-center">
-          <h1 className="text-[30px] font-bold gradient-font">
+          <h1 className="text-[30px] text-center md:text-left font-bold gradient-font">
             Futurescool Program
           </h1>
         </div>
@@ -222,11 +218,11 @@ const LandingPage = () => {
         <WhatIsSaid />
       </div>
 
-      <div className="bg-white w-[100%] py-[10%] md:pb-[500px] pb-[700px]">
+      <div className="bg-white w-[100%] py-[10%] md:pb-[1100px]">
         <AskQns />
       </div>
 
-      <footer className="bg-black">
+      <footer className="bg-black w-[100%]">
         <Footer />
       </footer>
     </div>

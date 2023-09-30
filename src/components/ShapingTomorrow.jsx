@@ -6,7 +6,7 @@ const ShapingTomorrow = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-10 px-[5%] justify-between w-[80%]">
       <div className="flex flex-col w-[100%] h-[100%] gap-5 lg:w-[50%]">
-        <h1 className="text-[36px] font-bold gradient-font">
+        <h1 className=" text-[30px] md:text-[36px] font-bold gradient-font">
            The Futurescool approach to innovate learning
         </h1>
 
@@ -21,7 +21,7 @@ const ShapingTomorrow = () => {
         </p>
       </div>
       <div className="w-[100%] lg:w-[50%]">
-        <h2 className="absolute text-center text-[26px] ml-32 mt-48 font-semibold text-white">Shaping Tommorrow</h2>
+        <h2 className="absolute hidden sm:block text-center text-[26px] ml-32 mt-48 font-semibold text-white">Shaping Tommorrow</h2>
         <img
           className="w-[100%] sm:w-[538px] h-[453px] opacity-85 px-5 sm:px-0  object-contain sm:object-cover"
           src={classPic}
