@@ -33,9 +33,11 @@ const LandingPage = () => {
 
         <div className="flex items-center w-[100%] px-[4%] py-[5%] justify-between">
           <div className="flex flex-col sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
-            <h1 className="gradient-font text-[54px]">Futurescool</h1>
+            <h1 className="gradient-font text-[90px] font-extrabold">
+              Futurescool
+            </h1>
             <h2 className="text-[48px] justify-center flex flex-col">
-              <span>Forging Stronger Futures.</span>
+              <span className="font-bold">Forging Stronger Futures.</span>
               <span>One Skill at a Time</span>
             </h2>
 

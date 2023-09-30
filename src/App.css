@@ -1,5 +1,5 @@
 * {
-  font-family: Inter;
+  font-family: "Inter";
 }
 
 .landing {
@@ -75,7 +75,7 @@
 
 
 .gradient-font {
-  background: linear-gradient(95deg, #6288A1, #B377D3, #B86B85);
+  background: linear-gradient(95deg, #57D7FF, #C557FF, #7555FF, #8281FD);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
