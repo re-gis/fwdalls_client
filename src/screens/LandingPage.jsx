@@ -225,7 +225,7 @@ const LandingPage = () => {
       </div>
 
       <footer className="bg-black">
-        <Footer />
+        {/* <Footer /> */}
       </footer>
     </div>
   );
