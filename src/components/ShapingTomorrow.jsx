@@ -21,7 +21,7 @@ const ShapingTomorrow = () => {
         </p>
       </div>
       <div className="w-[100%] lg:w-[50%]">
-        <h2 className="absolute text-center text-[26px] ml-20 mt-48 font-semibold text-white">Shaping Tommorrow</h2>
+        <h2 className="absolute text-center text-[26px] ml-32 mt-48 font-semibold text-white">Shaping Tommorrow</h2>
         <img
           className="w-[100%] sm:w-[538px] h-[453px] opacity-85 px-5 sm:px-0  object-contain sm:object-cover"
           src={classPic}
