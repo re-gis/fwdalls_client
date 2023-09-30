@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SaidCardStd from "./SaidCardStd";
 import SaidCardPar from "./SaidCardPar";
 import ch1 from "../assets/images/ch.svg";
-import ch2 from "../assets/images/ch2.png";
+import ch2 from "../assets/images/ch2.svg";
 import ch3 from "../assets/images/ch3.svg";
 import ch4 from "../assets/images/ch4.svg";
 import w1 from '../assets/images/w1.jpg'
