@@ -1,3 +1,7 @@
+* {
+  font-family: Inter;
+}
+
 .landing {
   background: linear-gradient(45deg, #242A3A, #0f0d0d);
 }

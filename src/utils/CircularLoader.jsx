@@ -42,12 +42,12 @@ const CircularLoader = ({ percentage, text }) => {
             transform="rotate(-90, 50, 50)" // Rotate the circle to start from the top
           />
         </svg>
-        <div className="absolute inset-0 flex items-center gradient-font justify-center font-bold text-lg">
+        <div className="absolute inset-0 flex items-center gradient-font justify-center font-bold text-[24px]">
           {percentage}
-          <span className="text-[12px]">%</span>
+          <span className="text-[18px]">%</span>
         </div>
       </div>
-      <div className="flex text-gray-400 items-center text-[12px] font-[500] justify-center text-center">
+      <div className="flex text-gray-400 items-center text-[18px] font-[500] justify-center text-center">
         <h1>{text}</h1>
       </div>
     </div>

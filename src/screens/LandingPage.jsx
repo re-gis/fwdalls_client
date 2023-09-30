@@ -12,30 +12,35 @@ import s4 from "../assets/images/s4.svg";
 import ShapingTomorrow from "../components/ShapingTomorrow";
 import ResultCard from "../components/ResultCard";
 import FutureProgramCard from "../components/FutureProgramCard";
-import girl from "../assets/images/girl.jpg";
+import girl from "../assets/images/girl.svg";
+import boy from "../assets/images/boy.svg";
+import girl2 from "../assets/images/girl2.svg";
 import ChildWillLearn from "../components/ChildWillLearn";
 import RoadMap from "../components/RoadMap";
 import CircularLoader from "../utils/CircularLoader";
 import WhatIsSaid from "../components/WhatIsSaid";
+import AskQns from "../components/AskQns";
+import Footer from "../components/Footer";
+import nice from '../assets/images/nice.svg'
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap landing py-3 w-[100%]">
+    <div className="flex flex-col gap landing pt-3 w-[100%]">
       <div className="w-[100%] px-[4%] h-[100%] text-white text-[12px] font-[500]">
         <div className=" w-[100%] h-[15%]">
           <NavBar />
         </div>
 
         <div className="flex items-center w-[100%] px-[4%] py-[5%] justify-between">
-          <div className="flex flex-col text-[50px] sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
-            <h1 className="gradient-font">Futurescool</h1>
-            <h2 className="text-[40px] justify-center flex flex-col">
+          <div className="flex flex-col sm:items-center md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
+            <h1 className="gradient-font text-[54px]">Futurescool</h1>
+            <h2 className="text-[48px] justify-center flex flex-col">
               <span>Forging Stronger Futures.</span>
               <span>One Skill at a Time</span>
             </h2>
 
             <div className="flex flex-col gap-5">
-              <h3 className="text-[15px] flex flex-col">
+              <h3 className="text-[20px] flex flex-col">
                 <span>
                   Revolutionising education and empowering the next generation{" "}
                 </span>
@@ -58,34 +63,7 @@ const LandingPage = () => {
           </div>
 
           <div className="hidden lg:flex w-[40%] flex-wrap gap-10">
-            <div className="w-[30%] h-[250px] border rounded-[40px]">
-              <img
-                src={p1}
-                className="h-[100%] w-[100%] rounded-[40px] object-cover"
-                alt=""
-              />
-            </div>
-            <div className="w-[25%] h-[120px] border rounded-tl-full rounded-bl-full rounded-br-full">
-              <img
-                className="h-[100%] w-[100%] rounded-tl-full rounded-bl-full rounded-br-full object-cover"
-                src={p2}
-                alt=""
-              />
-            </div>
-            <div className="w-[25%] h-[120px] border rounded-tr-full rounded-br-full rounded-tl-full">
-              <img
-                className="h-[100%] w-[100%] rounded-tr-full rounded-br-full rounded-tl-full object-cover"
-                src={p3}
-                alt=""
-              />
-            </div>
-            <div className="w-[30%] h-[250px] border rounded-[40px]">
-              <img
-                className="h-[100%] w-[100%] rounded-[40px] object-cover"
-                src={p4}
-                alt=""
-              />
-            </div>
+            <img src={nice} alt="" />
           </div>
         </div>
       </div>
@@ -100,7 +78,7 @@ const LandingPage = () => {
             Programs Designed to Deliver Results
           </h1>
         </div>
-        <div className="w-[100%] gap-5 px-10 flex flex-col sm:flex-row sm:justify-center items-center pt-10">
+        <div className="w-[100%] gap-5 px-10 flex flex-col lg:flex-row lg:justify-center items-center pt-10">
           <ResultCard
             image={s1}
             title={"Live Tutoring"}
@@ -142,7 +120,7 @@ const LandingPage = () => {
           </h1>
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-5">
             <FutureProgramCard
               title={"Basic"}
               role={"Explorer"}
@@ -170,7 +148,7 @@ const LandingPage = () => {
               }
               mainSkill={"Life Skills, Cognitive Skills, Digital Literacy"}
               certs={"Innovator Certificate"}
-              pic={girl}
+              pic={boy}
               money={"1950"}
             />
             <FutureProgramCard
@@ -185,12 +163,14 @@ const LandingPage = () => {
               }
               mainSkill={"Future Tech, Soft Skills, Financial Literacy"}
               certs={"Visionary Certificate"}
-              pic={girl}
+              pic={girl2}
               money={"3100"}
             />
           </div>
-          <div className="flex justify-center items-center text-[12px] text-gray-600">
-            <p>*payment plans available, please ask for details</p>
+          <div className="flex justify-center items-center text-[16px] text-gray-600">
+            <p className="text-center sm:text-left">
+              *payment plans available, please ask for details
+            </p>
           </div>
         </div>
       </div>
@@ -204,7 +184,7 @@ const LandingPage = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center gap-5 py-[5%]">
-        <h1 className="text-[30px] font-bold text-white flex justify-center">
+        <h1 className="text-[36px] text-center sm:text-left font-bold text-white flex justify-center">
           Result We Deliver
         </h1>
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-center items-center">
@@ -230,7 +210,7 @@ const LandingPage = () => {
           />
         </div>
         <div className="flex w-[100%] justify-center">
-          <button className="gradient-underline-inverse w-[60%] sm:w-[25%] hover:text-white underline hover:no-underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+          <button className="gradient-underline-inverse w-[60%] text-[14px] sm:w-[25%] hover:text-white underline hover:no-underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
             Schedule a Call
           </button>
         </div>
@@ -239,9 +219,16 @@ const LandingPage = () => {
       <div className="bg-white w-[100%] py-[5%]">
         <WhatIsSaid />
       </div>
+
+      <div className="bg-white w-[100%] py-[10%]">
+        <AskQns />
+      </div>
+
+      <footer className="bg-black">
+        <Footer />
+      </footer>
     </div>
   );
 };
 
 export default LandingPage;
-

@@ -6,6 +6,9 @@ import ch1 from "../assets/images/ch.svg";
 import ch2 from "../assets/images/ch2.svg";
 import ch3 from "../assets/images/ch3.svg";
 import ch4 from "../assets/images/ch4.svg";
+import w1 from '../assets/images/w1.jpg'
+import w2 from '../assets/images/w2.jpg'
+import w3 from '../assets/images/w3.jpg'
 
 const WhatIsSaid = () => {
   const [change, setChange] = useState(1);
@@ -21,11 +24,11 @@ const WhatIsSaid = () => {
   };
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex text-center md:text-left justify-center text-[30px] font-bold gradient-font">
+      <div className="flex text-center md:text-left justify-center text-[36px] font-bold gradient-font">
         <h1>What parents & students are saying about Futurescool</h1>
       </div>
 
-      <div className="flex items-center font-[500] justify-center gap-10 text-[15px]">
+      <div className="flex items-center font-[500] justify-center gap-10 text-[16px]">
         <h2
           onClick={handleChangeStudent}
           className="gradient-underline cursor-pointer"
@@ -78,7 +81,33 @@ const WhatIsSaid = () => {
           </>
         ) : (
           <>
-            <SaidCardPar />
+            <SaidCardPar
+              name={"Anna Randera"}
+              text={
+                "Enrolling my sonin Futurescool's Finencial Literacy program was one of the best decisions I made for his future."
+              }
+              pic={w1}
+            />
+            <SaidCardPar
+              name={"Notulu Lungu"}
+              text={
+                "Futurescool's emphasis on Critical Thinking and Problem Solving has made a remarkable impact on my daughter's academic performance."
+              }
+              pic={w2}
+            />
+            <SaidCardPar
+              name={"Aisha Mohhamed"}
+              text={
+                "My daughter is not only excelling academically but she is also becoming more emotionally, intelligent, empathetic and socially aware. Futurescool's holistic approach to education is truly commendable."
+              }
+              pic={w3}
+            />
+            <SaidCardPar
+              name={"Angus Young"}
+              text={
+                "I enrolled my son in Futurescool's Leadership and Management program hoping to instill valuable leadership skills in him. I'm thrilled with the progress he's made."
+              }
+            />
           </>
         )}
       </div>

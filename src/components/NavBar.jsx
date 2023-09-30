@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import logo from "../assets/react.svg";
+import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {

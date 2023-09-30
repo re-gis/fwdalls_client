@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import classPic from "../assets/images/class.jpg";
+import classPic from "../assets/images/classPic.jpg";
 import LearnCard from "./LearnCard";
 import Problem from "../assets/images/Problem.svg";
 import Structure from "../assets/images/Structure.svg";
@@ -15,20 +15,20 @@ import Logics from "../assets/images/Logicsvg.svg";
 
 const ChildWillLearn = () => {
   return (
-    <div className="relative h-auto md:h-[900px]  bg-white-400 flex flex-col items-center">
+    <div className="relative h-auto md:h-[1500px]  bg-white-400 flex flex-col items-center">
       <div className="w-[100%] hidden md:block absolute bg-blue-400 h-[40%]">
         <img
           src={classPic}
-          className="h-[100%] w-[100%] object-cover "
+          className="h-[100%] w-[100%] object-center "
           alt=""
         />
       </div>
-      <div className="md:absolute my-5 md:py-0 bg-blue-50 w-[80%] flex flex-col top-[30%] justify-center p-10">
+      <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[30%] justify-center p-10">
         <div className="flex flex-col text-center items-center gap-5">
-          <h1 className="flex justify-center text-center gradient-font text-[30px] font-bold">
+          <h1 className="flex justify-center text-center gradient-font text-[54px] font-bold">
             Your Child Will Learn
           </h1>
-          <h1 className="flex justify-center text-[17px] text-center">
+          <h1 className="flex justify-center text-[24px] text-center">
             Cultivating these skills is a vital mission at Futurescool.
             Together, these skills form a robust foundation for your child's
             personal and education success. They empower children to adapt to
