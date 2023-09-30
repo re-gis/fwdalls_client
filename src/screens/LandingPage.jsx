@@ -13,7 +13,7 @@ import ShapingTomorrow from "../components/ShapingTomorrow";
 import ResultCard from "../components/ResultCard";
 import FutureProgramCard from "../components/FutureProgramCard";
 import girl from "../assets/images/girl.svg";
-import boy from "../assets/images/boy.svg";
+import boy from "../assets/images/boy2.png";
 import girl2 from "../assets/images/girl2.svg";
 import ChildWillLearn from "../components/ChildWillLearn";
 import RoadMap from "../components/RoadMap";
@@ -52,10 +52,10 @@ const LandingPage = () => {
               </h3>
 
               <div className="text-[15px] flex flex-col sm:flex-row btn-container items-center gap-5">
-                <button className="bg w-[60%] sm:w-[40%] border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+                <button className="bg lg:w-[170px] sm:w-[40%] border bg py-2 px-5 underline rounded-[20px] button gradient-border-btn">
                   Schedule a Call
                 </button>
-                <button className="gradient-underline-inverse w-[60%] sm:w-[40%] py-2 px-5 rounded-[20px]">
+                <button className="gradient-underline-inverse lg:w-[170px] underline sm:w-[40%] py-2 px-5 rounded-[20px]">
                   Book a Free Class
                 </button>
               </div>
@@ -107,7 +107,7 @@ const LandingPage = () => {
           />
         </div>
         <div className="flex items-start justify-center py-10">
-          <button className="text-white border border-[#242A3A]  bg py-2 px-5 rounded-[100px] sm:w-[25%] md:w-[20%] hoverBtn">
+          <button className="text-white border border-[#242A3A] underline  bg py-2 px-5 lg:w-[170px] rounded-[100px] sm:w-[25%] md:w-[20%] hoverBtn">
             Schedule a Call
           </button>
         </div>
@@ -210,7 +210,7 @@ const LandingPage = () => {
           />
         </div>
         <div className="flex w-[100%] justify-center">
-          <button className="gradient-underline-inverse w-[60%] text-[14px] sm:w-[25%] hover:text-white underline hover:no-underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+          <button className="gradient-underline-inverse lg:w-[170px] text-[14px] sm:w-[25%] hover:text-white underline hover:no-underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
             Schedule a Call
           </button>
         </div>
@@ -220,12 +220,12 @@ const LandingPage = () => {
         <WhatIsSaid />
       </div>
 
-      <div className="bg-white w-[100%] py-[10%]">
+      <div className="bg-white w-[100%] py-[10%] md:pb-[500px] pb-[700px]">
         <AskQns />
       </div>
 
       <footer className="bg-black">
-        {/* <Footer /> */}
+        <Footer />
       </footer>
     </div>
   );

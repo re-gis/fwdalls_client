@@ -14,7 +14,7 @@ import snapchat from "../assets/images/snapchat.svg";
 
 const Footer = () => {
   return (
-    <div className="text-[#919EAB] py-[5%] font-[400] text-[16px]">
+    <div className="text-[#919EAB] py-[5%] font-[400] text-[16px] mt-20 ">
       <div className="flex flex-col md:flex-row justify-between px-20 pb-20 pt-10">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-[20px] font-[600]">Explore</h1>
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex justify-between">
+          <div className="lg:flex justify-between block">
             <div className="flex flex-col gap-5">
               <div>
                 <h1 className="text-white text-[20px] font-[600]">Follow Us</h1>

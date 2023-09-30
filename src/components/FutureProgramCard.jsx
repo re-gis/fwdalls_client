@@ -2,6 +2,8 @@
 import React from "react";
 import MultiDigitCounter from "../utils/NumberCounter";
 import cert from '../assets/images/award-check.svg'
+import check from "../assets/images/check.png";
+import falsee from "../assets/images/false.png";
 
 const FutureProgramCard = ({
   title,
@@ -48,7 +50,8 @@ const FutureProgramCard = ({
             <span className="text-[20px] text-gray-400">topics</span>
           </p>
           <p className="text-[24px] gradient-font flex items-center">
-            <MultiDigitCounter target={skills} duration={1000} /> <span className="text-[20px] text-gray-400">skills</span>
+            <MultiDigitCounter target={skills} duration={1000} />{" "}
+            <span className="text-[20px] text-gray-400">skills</span>
           </p>
         </div>
       </div>
@@ -99,7 +102,7 @@ const FutureProgramCard = ({
       </div>
 
       <div className="p-4">
-        <button className="border w-[100%] bg py-2 px-5 button rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
+        <button className="border lg:w-[360px] h-[60px] bg py-2 px-5 button rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
           <img src={cert} alt="" className="h-[50px] w-[50px]" />
 
           <p className="text-[20px]">{certs}</p>
@@ -109,32 +112,32 @@ const FutureProgramCard = ({
       <div className="px-4">
         <ul className="flex flex-col text-[11px] text-gray-400">
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={check}  alt="" />
             <span>Certification</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={check}  alt="" />
             <span>Person letter</span>
             of recommendation
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={check}  alt="" />
             <span>Career & industry talks</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={falsee}  alt="" />
             <span>Lifetime alumni access</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={falsee}  alt="" />
             <span>Peer-to-peer mentorship</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={falsee}  alt="" />
             <span>Industry executive mentorship</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <img src={falsee}  alt="" />
             <span>Work experience / internship</span>
           </li>
         </ul>

@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-[100%]">
       <div className="w-[20%] h-[100%]">
         <Link>
-          <img src={logo} alt="" className="h-[100%] w-[30%]" />
+          <img src={logo} alt="" className="h-[80px] w-[80.59px]" />
         </Link>
       </div>
 
@@ -23,26 +23,26 @@ const NavBar = () => {
           <ul className="flex items-center gap-8">
             <div className="hidden sm:flex gap-2 md:gap-8 items-center">
               <li className="gradient-underline">
-                <Link>Explore</Link>
+                <Link className="text-[14px]">Explore</Link>
               </li>
               <li className="gradient-underline">
-                <Link>Our Method</Link>
+                <Link className="text-[14px]">Our Method</Link>
               </li>
               <li className="gradient-underline">
-                <Link>About</Link>
+                <Link className="text-[14px]">About</Link>
               </li>
               <li className="gradient-underline">
-                <Link>Blog</Link>
+                <Link className="text-[14px]">Blog</Link>
               </li>
               <li className="gradient-underline">
-                <Link>Contact</Link>
+                <Link className="text-[14px]">Contact</Link>
               </li>
               <li className="gradient-underline">
-                <Link>Work With Us</Link>
+                <Link className="text-[14px]">Work With Us</Link>
               </li>
             </div>
             <li>
-              <button className="border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+              <button className="border bg py-2 px-5 w-[78px] rounded-[20px] text-[14px] button gradient-border-btn">
                 Login
               </button>
             </li>

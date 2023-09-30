@@ -106,7 +106,7 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="w-[100%] flex pt-10 justify-center">
-        <button className="gradient-underline-inverse lg:w-[20%] text-[14px] md:w-[40%] sm:w-[60%] w-[80%] hover:text-white hover:no-underline underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+        <button className="gradient-underline-inverse lg:w-[170px] text-[14px] md:w-[40%] sm:w-[60%] w-[80%] hover:text-white hover:no-underline underline gradient-font border bg py-2 px-5 rounded-[20px] button gradient-border-btn">
           Book a Free Class
         </button>
       </div>

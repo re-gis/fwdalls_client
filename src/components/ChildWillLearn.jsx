@@ -17,11 +17,7 @@ const ChildWillLearn = () => {
   return (
     <div className="relative h-auto md:h-[1500px]  bg-white-400 flex flex-col items-center">
       <div className="w-[100%] hidden md:block absolute bg-blue-400 h-[40%]">
-        <img
-          src={classPic}
-          className="h-[100%] w-[100%] object-center "
-          alt=""
-        />
+        <img src={classPic} className="h-[713px] w-[1400px]" alt="" />
       </div>
       <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[30%] justify-center p-10">
         <div className="flex flex-col text-center items-center gap-5">

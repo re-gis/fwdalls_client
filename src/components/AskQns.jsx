@@ -5,7 +5,7 @@ import QnsCard from "./QnsCard";
 
 const AskQns = () => {
   return (
-    <div className="md:relative h-[auto] flex flex-col items-center">
+    <div className="md:relative h-[1200px] flex flex-col items-center">
       <div className="md:absolute">
         <img src={image} alt="" />
       </div>
@@ -61,7 +61,7 @@ const AskQns = () => {
         </div>
 
         <div className="w-[100%] flex pt-10 justify-center">
-          <button className="hover:bg-white hover:text-[#A842FF] w-[80%] sm:w-[60%] md:w-[40%] lg:w-[20%] border border-transparent text-white underline bg py-2 px-5 rounded-[20px] button gradient-border-btn">
+          <button className="hover:bg-white hover:text-[#A842FF] w-[80%] sm:w-[60%] md:w-[40%] lg:w-[170px] border border-transparent text-white underline bg py-2 px-5 rounded-[20px] button gradient-border-btn">
             Schedule a Call
           </button>
         </div>
