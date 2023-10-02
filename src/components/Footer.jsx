@@ -150,7 +150,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t p-5">
-        <h1 className="flex items-center justify-center text-[20px]">
+        <h1 className="flex items-center text-center justify-center text-[20px]">
           All content & material are ©2023 Futurescool
         </h1>
       </div>
