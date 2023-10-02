@@ -75,7 +75,15 @@
 
 
 .gradient-font {
-  background: linear-gradient(95deg, #57D7FF, #C557FF, #7555FF, #8281FD);
+  background: linear-gradient(to right,
+      #57D7FF 0%,
+      #57D7FF 10%,
+      #C557FF 20%,
+      #C557FF 30%,
+      #7555FF 40%,
+      #7555FF 60%,
+      #8281FD 70%,
+      #8281FD 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

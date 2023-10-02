@@ -42,7 +42,7 @@ const RoadMap = () => {
         </h1>
         <div className="flex flex-col gap-4 items-center">
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 1
             </h1>
             <p className="text-[20px] font-bold text-gray-400">
@@ -51,7 +51,7 @@ const RoadMap = () => {
           </div>
 
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 2
             </h1>
             <div>
@@ -65,13 +65,13 @@ const RoadMap = () => {
           </div>
 
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 3
             </h1>
           </div>
 
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 4
             </h1>
             <div>
@@ -85,13 +85,13 @@ const RoadMap = () => {
           </div>
 
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 5
             </h1>
           </div>
 
           <div className="flex items-center gap-10">
-            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold text-[#A842FF] flex justify-center items-center p-5 rounded-full">
+            <h1 className="border w-[100px] h-[100px] text-[15px] font-bold gradient-font flex justify-center items-center p-5 rounded-full">
               Level 6
             </h1>
             <div>

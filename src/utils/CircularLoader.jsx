@@ -1,9 +1,22 @@
 /* eslint-disable */
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const CircularLoader = ({ percentage, text }) => {
-  const circumference = 2 * Math.PI * 45;
-  const strokeDashoffset = (circumference * percentage) / 100;
+   const circleRef = useRef(null);
+   const circumference = 2 * Math.PI * 45;
+   const strokeDashoffset = (circumference * percentage) / 100;
+
+   useEffect(() => {
+     if (circleRef.current) {
+       // Animation from 0 to current percentage
+       circleRef.current.style.transition = "none"; // Remove transition temporarily
+       circleRef.current.style.strokeDashoffset = `${circumference}`;
+       setTimeout(() => {
+         circleRef.current.style.transition = "stroke-dashoffset 1s ease-out"; // Re-add transition
+         circleRef.current.style.strokeDashoffset = `${-strokeDashoffset}`;
+       }, 10); // Small delay to trigger the transition
+     }
+   }, [percentage]);
 
   return (
     <div className="w-[100%] lg:w-[25%] px-10 flex flex-col sm:flex-row lg:flex-col gap-5 lg:gap-0 items-center">
@@ -30,6 +43,7 @@ const CircularLoader = ({ percentage, text }) => {
             strokeWidth="2"
           />
           <circle
+            ref={circleRef}
             cx="50"
             cy="50"
             r="45"
@@ -40,6 +54,9 @@ const CircularLoader = ({ percentage, text }) => {
             strokeDasharray={circumference}
             strokeDashoffset={-strokeDashoffset}
             transform="rotate(-90, 50, 50)" // Rotate the circle to start from the top
+            style={{
+              transition: "stroke-dashoffset 1s ease-out",
+            }} // Rotate the circle to start from the top
           />
         </svg>
         <div className="absolute inset-0 flex items-center gradient-font justify-center font-bold text-[24px]">
