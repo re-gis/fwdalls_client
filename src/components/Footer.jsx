@@ -134,15 +134,15 @@ const Footer = () => {
                 Received regular update and exclusive contents to help your
                 child stay ahead
               </p>
-              <div className="sm:relative md:w-[500px] flex flex-col gap-5">
+              <div className="relative md:w-[500px] flex items-center">
                 <input
                   type="text"
-                  className="sm:absolute w-[100%] h-[31px] top-[0.5px] text-white px-5 bg rounded-[100px]"
+                  className="w-[95%] h-[31px] pr-[60px] text-white px-5 bg rounded-[100px]"
                 />
                 <img
                   src={sendImg}
                   alt=""
-                  className="w-[50px] sm:absolute  md:left-[450px] top-[0.5px] cursor-pointer"
+                  className="absolute right-5 top-1/2 transform -translate-y-1/2 w-[50px] cursor-pointer"
                 />
               </div>
             </div>

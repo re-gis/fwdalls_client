@@ -5,9 +5,9 @@ import QnsCard from "./QnsCard";
 
 const AskQns = () => {
   return (
-    <div className="md:relative h-[auto] pb-[00px] sm:pb-[00px] md:pb-[350px] flex flex-col items-center">
-      <div className="md:absolute">
-        <img src={image} alt="" />
+    <div className="md:relative h-[auto] w-[100%] sm:pb-[00px] md:pb-[350px] flex flex-col items-center">
+      <div className="md:absolute w-[100%]">
+        <img src={image} alt="" className="w-[100%]" />
       </div>
 
       <div className="md:absolute my-5 py-10  shadow-2xl shadow-[#919EAB] bg-[#F9FAFB] w-[80%] flex flex-col top-[350px] justify-center p-10">

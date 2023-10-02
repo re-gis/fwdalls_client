@@ -27,8 +27,8 @@ const LandingPage = () => {
           <NavBar />
         </div>
 
-        <div className="flex items-center w-[100%] py-[5%] px-[5%]">
-          <div className="flex flex-col md:items-stretch md:text-[100px] w-[100%]">
+        <div className="flex items-center w-[100%] py-[5%] px-[5%] justify-around">
+          <div className="flex flex-col md:items-stretch md:text-[100px]">
             <h1 className="gradient-font flex flex-col text-[40px] md:text-[90px] font-extrabold">
               Futurescool
             </h1>

@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import MultiDigitCounter from "../utils/NumberCounter";
-import cert from '../assets/images/award-check.svg'
+import cert from "../assets/images/award-check.svg";
 import check from "../assets/images/check.png";
 import falsee from "../assets/images/false.png";
 
@@ -19,7 +19,7 @@ const FutureProgramCard = ({
   money,
 }) => {
   return (
-    <div className="bg-[#181c27] text-white w-[80%] lg:w-[30%] border-[#A842FF] h-[100%] border-[2px]">
+    <div className="bg-[#181c27] text-white w-[80%] lg:w-[30%] border-[#A842FF] h-[auto] border-[2px]">
       <div className="border-b border-[#A842FF] p-3 font-[400]">
         <h2 className="flex justify-center text-[24px] items-center">
           {title}
@@ -36,7 +36,7 @@ const FutureProgramCard = ({
       <div className="border-b border-[#A842FF] flex flex-col gap-3 p-3">
         <div className="flex items-center justify-around">
           <p className="text-[24px] flex items-center text-[#A842FF]">
-            <MultiDigitCounter target={weeks} duration={1000} />{" "}
+            {weeks}
             <span className="text-[20px] text-gray-400">weeks</span>
           </p>
           <p className="text-[20px] text-gray-400">
@@ -46,11 +46,11 @@ const FutureProgramCard = ({
 
         <div className="flex items-center justify-around">
           <p className="text-[24px] flex items-center gradient-font">
-            <MultiDigitCounter target={topics} duration={1000} />{" "}
+            {topics}
             <span className="text-[20px] text-gray-400">topics</span>
           </p>
           <p className="text-[24px] gradient-font flex items-center">
-            <MultiDigitCounter target={skills} duration={1000} />{" "}
+            {skills}
             <span className="text-[20px] text-gray-400">skills</span>
           </p>
         </div>
@@ -112,29 +112,38 @@ const FutureProgramCard = ({
       <div className="px-4">
         <ul className="flex flex-col text-[11px] text-gray-400">
           <li className="flex gap-2 text-[16px]">
-            <img src={check} alt="" />
+            <img className="w-[20px] h-[20px]" src={check} alt="" />
             <span>Certification</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={check} alt="" />
+            <img className="w-[20px] h-[20px]" src={check} alt="" />
             <span>Person letter of recommendation</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={check} alt="" />
+            <img className="w-[20px] h-[20px]" src={check} alt="" />
             <span>Career & industry talks</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={role === "Explorer" ? falsee : check} alt="" />
+            <img
+              className="w-[20px] h-[20px]"
+              src={role === "Explorer" ? falsee : check}
+              alt=""
+            />
             <span>Lifetime alumni access</span>
           </li>
           <li className="flex gap-2 text-[16px]">
-            <img src={role === "Explorer" ? falsee : check} alt="" />
+            <img
+              className="w-[20px] h-[20px]"
+              src={role === "Explorer" ? falsee : check}
+              alt=""
+            />
             <span>Peer-to-peer mentorship</span>
           </li>
           <li className="flex gap-2 text-[16px]">
             <img
               src={role === "Explorer" || role === "Innovator" ? falsee : check}
               alt=""
+              className="w-[20px] h-[20px]"
             />
             <span>Industry executive mentorship</span>
           </li>
@@ -142,6 +151,7 @@ const FutureProgramCard = ({
             <img
               src={role === "Explorer" || role === "Innovator" ? falsee : check}
               alt=""
+              className="w-[20px] h-[20px]"
             />
             <span>Work experience / internship</span>
           </li>
@@ -150,7 +160,7 @@ const FutureProgramCard = ({
 
       <div className="p-4">
         <button className="border w-[100%] gradient-underline-inverse py-3 px-5 rounded-md flex gap-2 items-center justify-center text-[16px] font-bold">
-          £<MultiDigitCounter target={money} duration={1000} />
+          £{money}
         </button>
       </div>
     </div>
