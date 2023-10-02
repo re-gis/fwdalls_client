@@ -27,8 +27,8 @@ const LandingPage = () => {
           <NavBar />
         </div>
 
-        <div className="flex items-center w-[100%] py-[5%] justify-between">
-          <div className="flex flex-col md:items-stretch md:text-[100px] w-[100%] lg:w-[60%]">
+        <div className="flex items-center w-[100%] py-[5%] px-[5%]">
+          <div className="flex flex-col md:items-stretch md:text-[100px] w-[100%]">
             <h1 className="gradient-font flex flex-col text-[40px] md:text-[90px] font-extrabold">
               Futurescool
             </h1>
@@ -60,7 +60,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex w-[40%] flex-wrap gap-10">
+          <div className="hidden lg:flex flex-wrap gap-10">
             <img src={nice} alt="" />
           </div>
         </div>

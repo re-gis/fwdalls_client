@@ -102,7 +102,7 @@ const FutureProgramCard = ({
       </div>
 
       <div className="p-4">
-        <button className="border lg:w-[360px] h-[60px] bg py-2 px-5 button rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
+        <button className="border w-[100%] sm:w-[100%] lg:w-[100%] h-[60px] bg py-2 px-5 button rounded-md flex gap-2 items-center justify-center text-[11px] font-bold">
           <img src={cert} alt="" className="h-[50px] w-[50px]" />
 
           <p className="text-[20px]">{certs}</p>
