@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useEffect, useRef } from "react";
+import MultiDigitCounter from "./NumberCounter";
 
 const CircularLoader = ({ percentage, text }) => {
   const containerRef = useRef(null);
@@ -83,7 +84,7 @@ const CircularLoader = ({ percentage, text }) => {
           />
         </svg>
         <div className="absolute inset-0 flex items-center gradient-font justify-center font-bold text-[24px]">
-          {percentage}
+          <MultiDigitCounter target={percentage} duration={1000} />
           <span className="text-[18px]">%</span>
         </div>
       </div>
